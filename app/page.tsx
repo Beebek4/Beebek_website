@@ -2,8 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { AiOutlineSmile, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { HiOutlineMail } from 'react-icons/hi';
-import facepic from "../public/facepic.jpg";
-import facepic2 from "../public/facepic2.jpg";
 import projectdata from "./projectdata";
 import ImageSwap from "./ImageSwap";
 import favicon from "../public/favicon.ico";
@@ -30,7 +28,7 @@ export default function Home() {
           <a className='transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:text-black duration-300' href="mailto: limbubeebek@gmail.com"><HiOutlineMail/></a>
         </div>
         <div className='lg:flex gap-10'>
-          <ImageSwap img1={facepic} img2={facepic2}/> 
+          <ImageSwap /> 
           <div className='h-80 lg:w-80 mx-auto overflow-hidden text-center align-middle inline-block'>
             <p className='font-mono p-6 py-12'>
             Namaste! I am currently a London University student pursuing my bachelor's in computer science. 
