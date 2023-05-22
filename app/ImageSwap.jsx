@@ -12,7 +12,7 @@ const ImageSwap = (props) => {
     <div className='mx-auto flex'>
       <img
         className=' h-80 w-80 object-cover rounded-3xl mx-auto'
-        src={isHovered ? props.img2.src : props.img1.src}
+        src={isHovered ? "/facepic2.jpg" : "/facepic.jpg"}
         alt="Image"
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
