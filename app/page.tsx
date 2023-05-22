@@ -55,7 +55,7 @@ export default function Home() {
               <summary className='text-gray-600 '>Design Tools Used:</summary>
               {project.tools.map((tool)=>(
                 <ul>
-                  <li className=' text-gray-600'>{tool}</li>
+                  <li key={tool} className=' text-gray-600'>{tool}</li>
                 </ul>
               ))}
             </details>
