@@ -45,14 +45,14 @@ export default function Home() {
           {projectdata.map((project:any)=>(
           <div key={project.name} className='text-center shadow-xl my-4 rounded-lg basis-1/3 flex-1'>
 
-            <h3 className=' font-semibold'>{project.name}</h3>
-            <div className='lg:w-96 lg:h-72 md:w-80 md:h-64 w-52 h-44  relative m-auto'>
+            <h3 key={project.name} className=' font-semibold'>{project.name}</h3>
+            <div key={project.name} className='lg:w-96 lg:h-72 md:w-80 md:h-64 w-52 h-44  relative m-auto'>
               <Image className='m-auto rounded-3xl border-solid border-2 border-gray-600' fill={true} src={project.imgUrl} alt={project.imgAlt}/>
             </div>
             
-            <p className='max-w-md p-4 m-auto '>{project.desc}</p>
-            <details className='question py-4'>
-              <summary className='text-gray-600 '>Design Tools Used:</summary>
+            <p key={project.name} className='max-w-md p-4 m-auto '>{project.desc}</p>
+            <details key={project.name} className='question py-4'>
+              <summary key={project.name} className='text-gray-600 '>Design Tools Used:</summary>
               {project.tools.map((tool:any)=>(
                 <ul key={tool}>
                   <li key={tool} className=' text-gray-600'>{tool}</li>
