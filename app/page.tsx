@@ -43,7 +43,7 @@ export default function Home() {
         <h2 className=' text-center font-bold text-2xl py-4 text-indigo-500'>My Projects</h2>
         <div className='flex flex-col gap-10 p-8 lg:flex-row lg:flex-wrap'>
           {projectdata.map((project:any)=>(
-          <div className='text-center shadow-xl my-4 rounded-lg basis-1/3 flex-1'>
+          <div key={project.name} className='text-center shadow-xl my-4 rounded-lg basis-1/3 flex-1'>
 
             <h3 className=' font-semibold'>{project.name}</h3>
             <div className='lg:w-96 lg:h-72 md:w-80 md:h-64 w-52 h-44  relative m-auto'>
@@ -54,7 +54,7 @@ export default function Home() {
             <details className='question py-4'>
               <summary className='text-gray-600 '>Design Tools Used:</summary>
               {project.tools.map((tool:any)=>(
-                <ul>
+                <ul key={tool}>
                   <li key={tool} className=' text-gray-600'>{tool}</li>
                 </ul>
               ))}
